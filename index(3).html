@@ -1,0 +1,243 @@
+﻿<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>China — Información en Tabla</title>
+    <style>
+        :root {
+            --bg: #f7fbff;
+            --header: #d32f2f;
+            --accent: #1565c0;
+            --card: #ffffff;
+            --text: #222;
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            background: var(--bg);
+            color: var(--text);
+            padding: 20px;
+        }
+
+        header {
+            background: var(--header);
+            color: white;
+            padding: 18px;
+            border-radius: 25px;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+            header img {
+                width: 56px;
+                height: auto;
+                border-radius: 6px;
+                box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+            }
+
+            header h1 {
+                margin: 0;
+                font-size: 20px;
+            }
+        .nav {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+            justify-content: center;
+            margin-top: 10px;
+        }
+
+            .nav a {
+                color: white;
+                text-decoration: none;
+                padding: 8px 12px;
+                border-radius: 6px;
+                background: rgba(255,255,255,0.06);
+                border: 1px solid rgba(255,255,255,0.06);
+                font-size: 14px;
+            }
+
+                .nav a:hover {
+                    background: rgba(255,255,255,0.10);
+                }
+
+                .nav a.active, .nav a[aria-current="page"] {
+                    background: #b71c1c;
+                    border-color: rgba(0,0,0,0.08);
+                    font-weight: 700;
+                }
+        main {
+            margin-top: 18px;
+        }
+
+        .tabla-contenedor {
+            overflow-x: auto;
+            background: linear-gradient(180deg, rgba(255,255,255,0.9), rgba(255,255,255,0.95));
+            padding: 12px;
+            border-radius: 8px;
+            box-shadow: 0 6px 18px rgba(0,0,0,0.06);
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            min-width: 720px;
+        }
+
+        thead th {
+            background: var(--accent);
+            color: white;
+            text-align: left;
+            padding: 12px 14px;
+            font-size: 16px;
+        }
+
+        tbody td {
+            padding: 14px;
+            border-bottom: 1px solid #eee;
+            vertical-align: top;
+            background: var(--card);
+        }
+
+        tbody tr:hover td {
+            background: #fbfbfb;
+        }
+
+        .col-1 {
+            width: 220px;
+            font-weight: 700;
+        }
+
+        .small {
+            font-size: 13px;
+            color: #555
+        }
+
+        @media (max-width:600px) {
+            header h1 {
+                font-size: 16px
+            }
+
+            .col-1 {
+                width: 150px
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="img/bandera.jpg" alt="Bandera china" />
+        <h1>China — Panorama resumido (tabla)</h1>
+        <nav class="nav" aria-label="Navegación principal">
+            <a href="index(2).html">Estados Unidos</a>
+            <a href="index(3).html">China</a>
+            <a href="index(4).html">japon</a>
+            <a href="index(5).html">Alemania</a>
+            <a href="index.html">Economia Mundial</a>
+        </nav>
+    </header>
+
+    <main>
+        <div class="tabla-contenedor">
+            <table>
+                <thead>
+                    <tr>
+                        <th class="col-1">Tema</th>
+                        <th>Descripción</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Datos generales</td>
+                        <td>
+                            <p class="small">Nombre oficial:</p>
+                            República Popular China<br>
+                            <p class="small">Población (aprox.):</p>
+                            1,400+ millones (varía según el año).
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>Economía</td>
+                        <td>
+                            China es la segunda economía más grande del mundo por PIB nominal. Combina una fuerte industria manufacturera con una creciente economía de servicios. Se destaca en exportaciones, inversiones en infraestructura y producción industrial.
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>Comercio internacional</td>
+                        <td>
+                            Es uno de los mayores exportadores e importadores globales. Principales socios: Estados Unidos, Unión Europea, ASEAN, Japón y Corea del Sur. Programas como la Iniciativa de la Franja y la Ruta proyectan su influencia comercial global.
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>Moneda y finanzas</td>
+                        <td>
+                            Moneda: Renminbi (Yuan, símbolo: ¥). China mantiene grandes reservas internacionales y tiene un sistema financiero en constante desarrollo y reforma con control estatal importante.
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>Tecnología e innovación</td>
+                        <td>
+                            Sectores fuertes: telecomunicaciones, inteligencia artificial, comercio electrónico y semiconductores (aunque con dependencia externa en partes). Empresas destacadas: Alibaba, Tencent, Huawei, ByteDance.
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>Cultura y sociedad</td>
+                        <td>
+                            Cultura milenaria con enormes variaciones locales. Idioma principal: chino mandarín. Fiestas importantes: Año Nuevo Chino (festival de primavera), Festival del Medio Otoño, entre otros.
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>Infraestructura y urbanización</td>
+                        <td>
+                            Fuerte inversión en carreteras, ferrocarriles de alta velocidad, puertos y aeropuertos. Ciudades como Shanghai, Beijing y Shenzhen son grandes centros económicos.
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>Retos</td>
+                        <td>
+                            Envejecimiento de la población, desigualdad regional, presión ambiental, dependencia tecnológica en ciertos componentes y la necesidad de transitar a un crecimiento más sustentable.
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>Oportunidades</td>
+                        <td>
+                            Mercado interno gigantesco, avances en tecnología, inversiones en energía renovable y potencial para nuevas alianzas comerciales y tecnológicas.
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>Conclusión</td>
+                        <td>
+                            China es un actor central en la economía mundial: su tamaño de mercado, capacidad industrial y proyectos internacionales la convierten en una pieza clave del comercio y la geopolítica global.
+                        </td>
+                    </tr>
+
+                </tbody>
+            </table>
+        </div>
+    </main>
+    <script>
+     (function () {
+         const links = document.querySelectorAll('.nav a');
+         const path = window.location.pathname;
+         links.forEach(a => {
+             const href = a.getAttribute('href');
+             if (path.endsWith(href)) {
+                 a.classList.add('active');
+                 a.setAttribute('aria-current', 'page');
+             }
+         });
+     })();</script>
+</body>
+</html>

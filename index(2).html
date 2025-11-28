@@ -1,0 +1,131 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Estados Unidos y la Economía Mundial</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+            padding: 20px;
+        }
+
+        header {
+            background-color: #1a73e8;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            border-radius: 10px;
+        }
+        .nav {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+            justify-content: center;
+            margin-top: 10px;
+        }
+
+            .nav a {
+                color: white;
+                text-decoration: none;
+                padding: 8px 12px;
+                border-radius: 6px;
+                background: rgba(255,255,255,0.06);
+                border: 1px solid rgba(255,255,255,0.06);
+                font-size: 14px;
+            }
+
+                .nav a:hover {
+                    background: rgba(255,255,255,0.10);
+                }
+
+                .nav a.active, .nav a[aria-current="page"] {
+                    background: #b71c1c;
+                    border-color: rgba(0,0,0,0.08);
+                    font-weight: 700;
+                }
+        section {
+            background: white;
+            padding: 20px;
+            margin-top: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+
+        h2 {
+            color: #1a73e8;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+
+            .logo {
+                width: 10px;
+                height: auto;
+                border-radius: 6px;
+                flex: 0 0 auto;
+            }
+        }
+        .figure{
+            margin: 12px 0;
+            text-align: center;
+        }
+        .figure figcaption{ 
+            font-size: 0.9rem;
+            color: #666;
+            margin-top: 6px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="https://upload.wikimedia.org/wikipedia/en/a/a4/Flag_of_the_United_States.svg"
+             width="150"
+             border="0"
+             align="middle">
+        <h1>Estados unidos en la economia mundial</h1>
+        <nav class="nav" aria-label="Navegación principal">
+            <a href="index(2).html">Estados Unidos</a>
+            <a href="index(3).html">China</a>
+            <a href="index(4).html">(otra página)</a>
+            <a href="index(5).html">Alemania</a>
+            <a href="index.html">Economia Mundial</a>
+        </nav>
+    </header>
+
+    <section>
+        <h2>Comercio Internacional</h2>
+        <p>Estados Unidos es uno de los mayores importadores y exportadores del mundo. Mantiene relaciones comerciales con cientos de países y participa en acuerdos que afectan el comercio global, como el T-MEC y tratados con Asia y Europa.</p>
+        <center><img src="img/dinero.jpg" /></center>
+    </section>
+
+    <section>
+        <h2>Influencia del Dólar</h2>
+        <p>El dólar estadounidense es la moneda más usada en transacciones internacionales y reservas de bancos centrales. Esto le da a Estados Unidos una posición privilegiada en la economía mundial, ya que muchas economías dependen de la estabilidad del dólar.</p>
+        <center><img src="img/descarga.jpg" /></center>
+    </section>
+
+    <section>
+        <h2>Innovación y Tecnología</h2>
+        <p>El país es líder en innovación, siendo hogar de empresas tecnológicas como Apple, Google, Microsoft y muchas más. Estas compañías impulsan el desarrollo digital global y generan impacto en múltiples sectores económicos.</p>
+        <center><img src="img/tecnologia.jpg" /></center>
+    </section>
+
+    <section>
+        <h2>Conclusión</h2>
+        <p>Estados Unidos juega un papel fundamental en la economía mundial gracias a su poder financiero, su estabilidad monetaria, su industria tecnológica y su participación en el comercio internacional.</p>
+    </section>
+    <script>
+    (function () {
+        const links = document.querySelectorAll('.nav a');
+        const path = window.location.pathname;
+        links.forEach(a => {
+            const href = a.getAttribute('href');
+            if (path.endsWith(href)) {
+                a.classList.add('active');
+                a.setAttribute('aria-current', 'page');
+            }
+        });
+    })();</script>
+</body>
+</html>

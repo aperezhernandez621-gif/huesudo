@@ -1,0 +1,114 @@
+﻿<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Japón — Lista Informativa</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #f0f4ff;
+            margin: 0;
+            padding: 20px;
+        }
+
+        header {
+            background: #c62828;
+            color: white;
+            padding: 15px;
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+
+            header img {
+                width: 60px;
+                border-radius: 6px;
+                box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+            }
+        .nav {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+            justify-content: center;
+            margin-top: 10px;
+        }
+
+            .nav a {
+                color: white;
+                text-decoration: none;
+                padding: 8px 12px;
+                border-radius: 6px;
+                background: rgba(255,255,255,0.06);
+                border: 1px solid rgba(255,255,255,0.06);
+                font-size: 14px;
+            }
+
+                .nav a:hover {
+                    background: rgba(255,255,255,0.10);
+                }
+
+                .nav a.active, .nav a[aria-current="page"] {
+                    background: #b71c1c;
+                    border-color: rgba(0,0,0,0.08);
+                    font-weight: 700;
+                }
+        h1 {
+            margin: 0;
+        }
+
+        ul {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            margin-top: 20px;
+        }
+
+        li {
+            margin-bottom: 12px;
+            font-size: 16px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <img src="https://upload.wikimedia.org/wikipedia/en/9/9e/Flag_of_Japan.svg" alt="Bandera de Japón">
+        <h1>Japón — Lista de Información General</h1>
+        <nav class="nav" aria-label="Navegación principal">
+            <a href="index(2).html">Estados Unidos</a>
+            <a href="index(3).html">China</a>
+            <a href="index(4).html">japon</a>
+            <a href="index(5).html">Alemania</a>
+        <a href="index.html">Economia Mundial</a>
+        </nav>
+    </header>
+
+    <ul>
+        <li><strong>Nombre oficial:</strong> Japón (Nippon/Nihon).</li>
+        <li><strong>Capital:</strong> Tokio.</li>
+        <li><strong>Población:</strong> Más de 125 millones de habitantes.</li>
+        <li><strong>Moneda:</strong> Yen japonés (¥).</li>
+        <li><strong>Idioma oficial:</strong> Japonés.</li>
+        <li><strong>Economía:</strong> Una de las más grandes del mundo, destacada en tecnología, automóviles y electrónica.</li>
+        <li><strong>Cultura:</strong> principalmente a través del impacto en su cultura pop (anime, manga, videojuegos), la introducción de tecnologías y estilos de vida occidentales durante el crecimiento económico y la influencia de sus exportaciones culturales (tanto tradicionales como modernas) en el extranjero.</li>
+        <li><strong>Gobierno:</strong> principalmente a través de su rol como el mayor acreedor mundial, financiando inversiones globales a través de su deuda pública con bajas tasas de interés.</li>
+        <li><strong>Tecnología:</strong>principalmente en la competencia global (donde debe modernizarse para no quedarse atrás, especialmente en áreas como la IA) y en las debilidades estructurales (como la lenta transformación digital y la dependencia de procedimientos obsoletos), lo que la hace vulnerable a la ciberseguridad. </li>
+        <li><strong>Lugares famosos:</strong> La economía de Japón afecta a los lugares turísticos famosos del mundo principalmente a través del gasto de sus turistas y la influencia de su moneda (el yen).</li>
+    </ul>
+    <script>
+    (function () {
+        const links = document.querySelectorAll('.nav a');
+        const path = window.location.pathname;
+        links.forEach(a => {
+            const href = a.getAttribute('href');
+            if (path.endsWith(href)) {
+                a.classList.add('active');
+                a.setAttribute('aria-current', 'page');
+            }
+        });
+    })();</script>
+</body>
+</html>

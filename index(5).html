@@ -1,0 +1,165 @@
+﻿<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Economía de Alemania</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background: #eef2f7;
+            margin: 0;
+            padding: 20px;
+        }
+
+        header {
+            background: #000;
+            color: white;
+            padding: 20px;
+            border-radius: 10px;
+            text-align: center;
+        }
+        .nav {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+            justify-content: center;
+            margin-top: 10px;
+        }
+
+            .nav a {
+                color: white;
+                text-decoration: none;
+                padding: 8px 12px;
+                border-radius: 6px;
+                background: rgba(255,255,255,0.06);
+                border: 1px solid rgba(255,255,255,0.06);
+                font-size: 14px;
+            }
+
+                .nav a:hover {
+                    background: rgba(255,255,255,0.10);
+                }
+
+                .nav a.active, .nav a[aria-current="page"] {
+                    background: #b71c1c;
+                    border-color: rgba(0,0,0,0.08);
+                    font-weight: 700;
+                }
+            header img {
+                width: 80px;
+                margin-bottom: 10px;
+                border-radius: 8px;
+            }
+
+
+
+        section {
+            background: white;
+            padding: 20px;
+            margin-top: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+
+        h2 {
+            color: #b71c1c;
+        }
+
+        ul {
+            margin-left: 20px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 10px;
+        }
+
+        th {
+            background: #b71c1c;
+            color: white;
+            padding: 10px;
+        }
+
+        td {
+            padding: 10px;
+            border-bottom: 1px solid #ddd;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <img src="https://upload.wikimedia.org/wikipedia/en/b/ba/Flag_of_Germany.svg" alt="Bandera de Alemania">
+        <h1>Economía de Alemania</h1>
+        <nav class="nav" aria-label="Navegación principal">
+            <a href="index(2).html">Estados Unidos</a>
+            <a href="index(3).html">China</a>
+            <a href="index(4).html">japon</a>
+            <a href="index(5).html">Alemania</a>
+            <a href="index.html">Economia Mundial</a>
+        </nav>
+    </header>
+    <section>
+        <h2>Información general</h2>
+        <p>Alemania es la economía más grande de Europa y una de las más influyentes del mundo. Se caracteriza por su alta industrialización, exportaciones avanzadas, estabilidad económica y mano de obra altamente calificada.</p>
+    </section>
+
+    <section>
+        <h2>Lista de sectores económicos más importantes</h2>
+        <ul>
+            <li><strong>Industria automotriz:</strong> Mercedes-Benz, BMW, Audi, Volkswagen.</li>
+            <li><strong>Ingeniería y maquinaria:</strong> Famosa por su precisión y calidad.</li>
+            <li><strong>Química y farmacéutica:</strong> Bayer, BASF.</li>
+            <li><strong>Energías renovables:</strong> Alemania es líder en energía eólica y solar.</li>
+            <li><strong>Tecnología avanzada:</strong> Robótica, automatización y software industrial.</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>Tabla de datos económicos</h2>
+        <table>
+            <tr>
+                <th>Indicador</th>
+                <th>Dato Aproximado</th>
+            </tr>
+            <tr>
+                <td>PIB</td>
+                <td>Más de 4.0 billones USD</td>
+            </tr>
+            <tr>
+                <td>Moneda</td>
+                <td>Euro (€)</td>
+            </tr>
+            <tr>
+                <td>Tasa de desempleo</td>
+                <td>Entre 3% y 5%</td>
+            </tr>
+            <tr>
+                <td>Exportaciones principales</td>
+                <td>Automóviles, maquinaria, productos químicos, tecnología.</td>
+            </tr>
+        </table>
+    </section>
+
+    <section>
+        <h2>Descripción adicional</h2>
+        <p>Alemania mantiene una economía social de mercado, donde se combina la iniciativa privada con políticas sociales. Es uno de los países con mayor índice de innovación y uno de los principales exportadores de alta tecnología en el mundo.</p>
+        <p>Además, forma parte clave de la Unión Europea, influyendo en decisiones financieras, políticas y comerciales en todo el continente.</p>
+    </section>
+   <script> 
+    (function () {
+    const links = document.querySelectorAll('.nav a');
+    const path = window.location.pathname;
+    links.forEach(a => {
+    const href = a.getAttribute('href');
+    if (path.endsWith(href)) {
+    a.classList.add('active');
+    a.setAttribute('aria-current', 'page');
+    }
+    });
+    })();
+    </script>
+</body>
+</html>
